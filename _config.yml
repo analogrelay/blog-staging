@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
@@ -10,6 +10,9 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : VibrantCode
+formatted_title:
+  normal: Vibrant
+  em: Code
 tagline: "Oooh, pretty code"
 author :
   name : Andrew Nurse
@@ -80,7 +83,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : vibrantcode
     livefyre :
       site_id : 123
     intensedebate :
@@ -96,7 +99,7 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google 
+    provider : false
     google : 
         tracking_id : 'UA-123-12'
     getclicky :
