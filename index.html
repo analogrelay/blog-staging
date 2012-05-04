@@ -1,0 +1,13 @@
+---
+layout: page
+---
+{% include JB/setup %}
+
+{% for post in site.posts %}
+<article class="post">
+	{% include themes/metro/postbody.html %}
+	<footer>
+		{% include themes/metro/postmeta.html %}
+	</footer>
+</article>
+{% endfor %}
