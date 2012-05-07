@@ -1,3 +1,9 @@
+body {
+	padding-bottom: 20px;
+}
+
+code { padding-left: 0; }
+
 h1#site-title { 
 	font-size: 48pt;
 	font-weight: normal;
@@ -6,6 +12,16 @@ h1#site-title {
 h1#site-title em { 
 	font-style: normal;
 	color: #393; 
+}
+
+img.float-img {
+	float: left;
+	margin-right: 10px;
+}
+
+div#about-me {
+	position: absolute;
+	bottom: 10px;
 }
 
 a:hover { text-decoration: none; }
@@ -22,13 +38,18 @@ div#sidebar {
 div#body {
 	position: fixed;
 	top: 0;
-	bottom: 0;
+	bottom: 20px;
 	right: 0;
 	left: 0;
-	height: 100%;
 	padding: 2em;
 	overflow: auto;
+	overflow-x: hidden;
 	margin-left: 325px;
+}
+
+div#site-footer-content {
+	float: right;
+	font-size: 14pt;
 }
 
 div.social { margin-top: 0.25em; }
@@ -75,3 +96,95 @@ nav {
 			nav ul li a:hover {
 				color: #f09609;
 			}
+
+/* iPad */
+@media only screen and (max-width: 1024px) {
+	h1#site-title {
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+		-o-transform: rotate(90deg);
+		width: 50px;
+	}
+
+	nav {
+		position: fixed;
+		bottom: 0;
+		height: auto;
+	}
+
+	nav ul li {
+		display: block;
+		padding: 0;
+	}
+
+	.tile.one {
+		width: 32px;
+		height: 32px;
+	}
+
+	div#sidebar {
+		width: 50px;
+	}
+
+	div#body {
+		margin-left: 50px;
+		padding-top: 0;
+	}
+
+	div#about-me { display: none; }
+}
+
+@media only screen and (max-width: 480px) {
+	div#sidebar {
+		position: static;
+		padding: 0;
+		width: auto;
+		text-align: center;
+	}
+
+	h1#site-title {
+		-webkit-transform:none;
+		-moz-transform:none;
+		-o-transform: none;
+		font-size: 36pt;
+		width: auto;
+	}
+
+	h2 { font-size: 22pt; }
+
+	article.post h2 { text-align: center; }
+
+	div#body {
+		position: static;
+		margin-left: 0;
+		margin-top: 0.5em;
+		padding: 0;
+	}
+
+	nav {
+		position: static;
+	}
+
+	pre { overflow-x: scroll; }
+
+	.tilerow {
+		float: none;
+	}
+
+	.tile {
+		float: none;
+		width: auto;
+		height: auto;
+	}
+
+	nav {
+	}
+
+		nav ul li {
+			display: inline;
+		}
+
+			nav ul li h3 {
+				display: inline;
+			}
+}

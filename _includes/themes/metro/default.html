@@ -10,6 +10,7 @@
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/metro.blue.css' rel="stylesheet" media="all">
 	<link href='{{ ASSET_PATH }}/css/metro.theme.css' rel="stylesheet" media="all">
+	<link href='{{ ASSET_PATH }}/css/code.css' rel="stylesheet" media="all">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
 <body>
@@ -17,10 +18,14 @@
 		<h1 id="site-title"><a href="{{ HOME_PATH }}">{{ site.formatted_title.normal }}<em>{{ site.formatted_title.em }}</em></a></h1>
 		<nav class="tiles">
 			<ul class="tilerow">
-				<li><a class="tile one bluebg" href="/archive.html"><h3>archive</h3></a></li>
-				<li><a class="tile one bluebg" href="/categories.html"><h3>categories</h3></a></li>
+				<li><a class="tile one bluebg" href="/"><h3>home</h3></a></li>
+				<li><a class="tile one tealbg" href="/talks.html"><h3>talks</h3></a></li>
 			</ul>
 		</nav>
+		<div id="about-me">
+			<img class="float-img" src="http://en.gravatar.com/userimage/3233983/90e37182b8e12d1762a501c23ce097f9.jpg?size=100" />
+			I'm Andrew. I write code for Microsoft and do web stuff. Want to know more? Read this blog!
+		</div>
 	</div>
 	<div id="body" role="main">
 		{{ content }}

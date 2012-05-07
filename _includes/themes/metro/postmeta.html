@@ -1,6 +1,3 @@
+{% if post.date %}
 <h4>Posted on {{ post.date | date_to_string }}</h4>
-<div class="social">
-	<ul class="list-linear">
-		<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div></li>
-	</ul>
-</div>
+{% endif %}
