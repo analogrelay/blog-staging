@@ -14,6 +14,9 @@ title : VibrantCode
 formatted_title:
   normal: Vibrant
   em: Code
+small_title:
+  normal: v
+  em: c
 tagline: "Oooh, pretty code"
 author :
   name : Andrew Nurse
