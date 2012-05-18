@@ -1,4 +1,5 @@
 ---
+disqus_old: true
 layout: post
 title: "Yet another blog update!"
 description: ""
