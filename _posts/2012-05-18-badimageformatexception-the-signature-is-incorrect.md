@@ -13,7 +13,7 @@ Have you ever gotten this exception when running Unit Tests which use Moq?
     
 It's a little strange but it turns out the issue is caused by a missing assembly reference in your Unit Test project. Let's say you have three projects: Core, Types and Test. In Types, we define a helper interface for writing to the console:
 
-{% highlight C# %}
+{% highlight csharp %}
 public interface IConsole {
     void WriteLine(string line);
 }
@@ -21,7 +21,7 @@ public interface IConsole {
 
 In Core, we have code to create and return one:
 
-{% highlight C# %}
+{% highlight csharp %}
 public class Thingy {
     public virtual IConsole MakeConsole() { ... }
 }
@@ -29,7 +29,7 @@ public class Thingy {
 
 And in Test, you have a unit test to test that something in Core never even constructs a console. Tests ONLY references Core, not Types (for whatever reason).
 
-{% highlight C# %}
+{% highlight csharp %}
 [Fact]
 public void DoodadWritesToConsole() {
     // Arrange
