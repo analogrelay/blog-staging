@@ -33,7 +33,7 @@ And in Test, you have a unit test to test that something in Core never even cons
 [Fact]
 public void DoodadWritesToConsole() {
     // Arrange
-    var thingyMock = new MockThingy();
+    var thingyMock = new Mock<Thingy>();
     var doodad = new Doodad(thingyMock.Object);
     
     // Act
