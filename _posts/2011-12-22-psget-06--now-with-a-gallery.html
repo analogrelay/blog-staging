@@ -9,7 +9,7 @@ permalink: /blog/2011/12/22/ps-get-06-now-with-a-gallery.html
 ---
 <p>I've been hard at work, and not just at my day job! It's been a while but I've finally gotten together and created a proper website for PS-Get including?.(drumroll please)?. a Gallery! <strike>Blatantly ripped off</strike> Borrowed from the <a href="http://github.com/nuget/nugetgallery">NuGet Gallery Code</a>, the <a href="http://psget.org">PS-Get Gallery</a> is a place to upload PS-Get modules for others to download. It also contains <a href="http://psget.org/pages/Install">detailed installation instructions</a>, but thanks to a new installer script, it's a pretty simple install! To install, just run this command from a PowerShell 3.0 or PowerShell 2.0 (with .NET 4.0 workaround, see below) window:</p>  <pre class="brush: powershell">(new-object Net.WebClient).DownloadString(&quot;http://install.psget.org&quot;)|iex</pre>
 
-<p>And then you're all set! There's rudimentary support for automatically injecting the proper code into&#160; your Profile, but if you want to do it manually, all you need is <code>Import-Module PS-Get.</code></p>
+<p>And then you're all set! There's rudimentary support for automatically injecting the proper code into your Profile, but if you want to do it manually, all you need is <code>Import-Module PS-Get.</code></p>
 
 <p>So, what's new in PS-Get 0.6?</p>
 
